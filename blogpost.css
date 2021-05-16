@@ -1,0 +1,75 @@
+.container{
+    display:grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 100px 700px 100px;
+    grid-template-areas: 
+     "hd hd hd hd hd hd"
+     "s1 mn mn mn mn s2"
+     "ft ft ft ft ft ft";
+     border: 2px solid red;
+}
+
+.header{
+    grid-area: hd;
+    background-image: url("./sky.JPG");
+    background-size: cover;
+    position: relative;
+}
+
+.sidebar1{
+    grid-area: s1;
+    width: 300px;
+    background-image: url("./street.JPG");
+    background-size: cover;
+    position: relative;
+}
+
+.sidebar2{
+    grid-area: s2;
+    width: 300px;
+    background-image: url("./street.JPG");
+    background-size: cover;
+    position: relative;
+}
+
+.content{
+    grid-area: mn;
+    font-weight: 500;
+    font-weight: bold;
+    background-color:rgb(233, 227, 227)
+}
+
+a {
+    color:darkblue;
+    font-weight: bold ;
+}
+
+.footer{
+    grid-area: ft;
+    color:black;
+    background-image: url("./lisbon.JPG");
+    background-size: cover;
+    position: relative;
+}
+
+ul#footerlist {list-style-type: none;
+    text-align:center;
+    margin-top: 40px;
+}
+
+ul#footerlist li {
+display: inline;
+margin: 10px;
+}
+
+
+.indent {
+    padding: 10px;
+}
+
+h1{
+    text-align:center;
+    vertical-align: middle;
+}
+
+

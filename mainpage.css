@@ -1,0 +1,112 @@
+@import "./blogpost.css";
+
+.container{
+    display:grid;
+    grid-template-columns: 225px 300px 300px;
+    grid-template-rows: 100px 700px 100px;
+    grid-template-areas: 
+     "hd hd hd hd hd hd hd hd"
+     "sd mn mn mn mn mn mn mn"
+     "ft ft ft ft ft ft ft ft";
+     border: 2px solid red;
+}
+
+.box{
+    border: 2px transparent blue;
+}
+
+.header{
+    grid-area: hd;
+    background-image: url("./sky.JPG");
+    background-size: cover;
+    position: relative;
+}
+
+.sidebar{
+    grid-area: sd;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(165, 233, 165);
+}
+
+
+.content{
+    grid-area: mn;
+    background-color:lightblue; 
+}
+
+.footer{
+    grid-area: ft;
+    background-color: rgb(243, 219, 82);
+}
+
+li{
+    margin: 35px 0;
+  }
+
+ul#footerlist {list-style-type: none;
+                text-align:center;
+                margin-top: 40px;
+}
+
+ul#footerlist li {
+    display: inline;
+    margin: 10px;
+    }
+
+.nestedGrid {
+    display: grid;
+    text-indent:1em;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 250px 250px;
+    grid-template-areas: 
+    "bx1 bx1 bx1 bx1 bx2 bx2 bx2 bx2" 
+    "bx3 bx3 bx3 bx3 bx4 bx4 bx4 bx4";
+    margin-top: 100px;
+    margin-right: 250px;
+    margin-left: 150px;
+    background-color:rgb(233, 227, 227);
+}
+
+.grid1{
+    grid-area: bx1;
+    padding-left: 10px;
+    padding-right:10px;
+    border: 1px solid black;
+}
+
+.grid2{
+    grid-area: bx2;
+    padding-left: 10px;
+    padding-right:10px;
+    border: 1px solid black;
+}
+
+.grid3{
+    grid-area: bx3;
+    padding-left: 10px;
+    padding-right:10px;
+    border: 1px solid black;
+}
+
+.grid4{
+    grid-area: bx4;
+    padding-left: 10px;
+    padding-right:10px;
+    border: 1px solid black;
+    background-image:url(pastel.JPG);
+}
+
+#topic{
+    position: relative;
+    top: 50px;
+    left: 100px;
+    font-size: 18px;
+}
+
+h1{text-align:center;
+    vertical-align: middle;}
+
+h3{text-align:left}
